@@ -1,0 +1,2 @@
+class Urlencurtada < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+json.array! @urlencurtadas, partial: 'urlencurtadas/urlencurtada', as: :urlencurtada

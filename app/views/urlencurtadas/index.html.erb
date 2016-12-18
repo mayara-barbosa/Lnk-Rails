@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Urlencurtadas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Urlencurtada</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @urlencurtadas.each do |urlencurtada| %>
+      <tr>
+        <td><%= urlencurtada.url %></td>
+        <td><%= urlencurtada.urlencurtada %></td>
+        <td><%= link_to 'Show', urlencurtada %></td>
+        <td><%= link_to 'Edit', edit_urlencurtada_path(urlencurtada) %></td>
+        <td><%= link_to 'Destroy', urlencurtada, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Urlencurtada', new_urlencurtada_path %>
